@@ -20,6 +20,7 @@ const userSchema = new Schema(
       type: String,
       required: true,
     }, 
+    savedGames: [gameSchema],
   },
   // utilize the toJSON virtual
   {
