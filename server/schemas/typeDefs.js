@@ -21,11 +21,11 @@ const typeDefs = gql`
     input savedGame {
         gameId: ID!
         title: String!
-        description: String!
+        description: String
         image: String
         link: String
-        upVotes: String
-        downVotes: String
+        upVotes: Int
+        downVotes: Int
         authors: [String]
       }
 
