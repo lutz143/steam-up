@@ -1,27 +1,38 @@
-import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import {
   ApolloClient,
   InMemoryCache,
-  ApolloProvider, 
+  ApolloProvider,
   createHttpLink,
 } from "@apollo/client";
 import { setContext } from "@apollo/client/link/context";
 
+import classes from "./App.css";
 
+import Header from "./containers/Header";
+import Sidebar from "./containers/Sidebar";
+import Footer from "./containers/Footer";
+
+import Home from "./pages/Home";
+import Game from "./pages/Game";
+import Profile from "./pages/Profile";
+import SearchResults from "./pages/SearchResults";
 
 function App() {
   return (
-    <ApolloProvider client={ client }>
+    <ApolloProvider client={client}>
       <Router>
-        <>
-          <Navbar />
-          <Switch>
-            <Route exact path='/' component={x} />
-            <Route exact path='/y' component={y} />
-            <Route render={() => <h1 className='display-2'>Wrong page!</h1>} />
-          </Switch>
-        </>
+        <Header />
+        <Sidebar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/game" element={<Game />} />
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/search" element={<SearchResults />} />
+          <Route render={() => <h1 className="display-2">Wrong page!</h1>} />
+        </Routes>
+        <Footer />
       </Router>
     </ApolloProvider>
   );
