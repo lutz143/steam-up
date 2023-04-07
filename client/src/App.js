@@ -21,7 +21,7 @@ import SearchResults from "./pages/SearchResults";
 
 function App() {
   return (
-    <ApolloProvider client={client}>
+    <ApolloProvider>
       <Router>
         <Header />
         <Sidebar />
@@ -30,7 +30,6 @@ function App() {
           <Route path="/game" element={<Game />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/search" element={<SearchResults />} />
-          <Route render={() => <h1 className="display-2">Wrong page!</h1>} />
         </Routes>
         <Footer />
       </Router>
