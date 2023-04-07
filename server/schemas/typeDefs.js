@@ -7,17 +7,18 @@ const typeDefs = gql`
         email: String
         totalPlayTime: Int
         savedGames: [Game]
-    }    
-
-    type Auth {
-        token: ID!
-        user: User
+    } 
+    
+    type Game {
+        gameId: ID!
+        authors: [String]
+        description: String
+        title: String!
+        image: String
+        link: String
     }
 
-    type Query {
-        me: User
-    }
-
+    
     input savedGame {
         gameId: ID!
         title: String!
@@ -27,8 +28,16 @@ const typeDefs = gql`
         upVotes: Int
         downVotes: Int
         authors: [String]
-      }
+    }
+    
+    type Auth {
+        token: ID!
+        user: User
+    }
 
+    type Query {
+        me: User
+    }
     
     type Mutation {
         login(email: String!, password: String!): Auth

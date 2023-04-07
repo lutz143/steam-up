@@ -1,4 +1,4 @@
-const { Schema } = require('mongoose');
+const { Schema, model } = require('mongoose');
 
 // subschema to house books within the User model
 const gameSchema = new Schema({
@@ -34,5 +34,7 @@ const gameSchema = new Schema({
     },
   ],
 });
+
+const Game = model('Game', gameSchema);
 
 module.exports = gameSchema;
