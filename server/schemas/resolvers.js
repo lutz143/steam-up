@@ -17,6 +17,9 @@ const resolvers = {
       },
       search: async () => {
         return Game.find()
+      },
+      users: async () => {
+        return User.find()
       }
     },
   
