@@ -1,5 +1,5 @@
 const { AuthenticationError } = require("apollo-server-express");
-const { User } = require("../models");
+const { User, Game } = require("../models");
 const { signToken } = require("../utils/auth");
 
 
@@ -15,6 +15,9 @@ const resolvers = {
         }
         throw new AuthenticationError('You need to be logged in!');
       },
+      search: async () => {
+        return Game.find()
+      }
     },
   
     Mutation: {
@@ -45,7 +48,7 @@ const resolvers = {
           return User.findOneAndUpdate(
             { _id: userId },
             { 
-              $addToSet: { savedGames: { book: gameData } } 
+              $addToSet: { games: { game: gameData } } 
             },
             { 
               new: true, 
@@ -56,10 +59,27 @@ const resolvers = {
          
         throw new AuthenticationError('You need to be logged in!');
       },
-      removeGame: async (parent, { game }, context) => {
-
-        // To-Do Please!!
-
+      removeGame: async (parent, { gameId }) => {
+        return Game.findOneAndDelete({ _id: gameId });
+      },
+      addComment: async (parent, { gameId, commentText, commentAuthor }) => {
+        return Game.findOneAndUpdate(
+          { _id: gameId },
+          {
+            $addToSet: { comments: { commentText, commentAuthor } },
+          },
+          {
+            new: true,
+            runValidators: true,
+          }
+        );
+      },
+      removeComment: async (parent, { gameId, commentId }) => {
+        return Game.findOneAndUpdate(
+          { _id: gameId },
+          { $pull: { comments: { _id: commentId } } },
+          { new: true }
+        );
       },
     },
   };

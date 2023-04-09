@@ -23,7 +23,12 @@ const userSchema = new Schema(
       type: String,
       required: true,
     }, 
-    savedGames: [gameSchema],
+    games: [
+      {
+        type: Schema.Types.ObjectId,
+        ref: 'Game',
+      },
+    ],
   },
   // utilize the toJSON virtual
   {
