@@ -1,1 +1,15 @@
-/* TODO */
+.pageBody {
+    overflow-y: auto;
+    height: calc(90vh - 62px);
+    padding: 4rem 4rem 0 4rem;
+    margin: 0 auto;
+    font-size: 1.4rem;
+}
+
+@media screen and (max-width: 1366px) {
+    .pageBody {
+        height: unset;
+        overflow-y: scroll;
+        padding: 5.5rem 2rem 5rem;
+    }
+}

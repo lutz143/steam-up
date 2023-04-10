@@ -23,8 +23,8 @@ function App() {
   return (
     <ApolloProvider>
       <Router>
-        <Header />
-        <Sidebar />
+        {/* <Header />
+        <Sidebar /> */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/game" element={<Game />} />

@@ -16,9 +16,9 @@ function Home() {
   }, []);
 
   return (
-    <div>
-      {/* Render the data from the API */}
-    </div>
+    <PageContainer>
+      <h1>Welcome to<br/>Steam Up!</h1>
+    </PageContainer>
   );
 }
 
