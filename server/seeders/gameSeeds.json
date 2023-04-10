@@ -2,16 +2,16 @@
   {
     "title": "Red Dead Redemption II",
     "description": "A fun western role-playing game",
-    "authors": "Brian Kernighan"
+    "company": "Rockstar"
   },
   {
     "title": "GTA V",
-    "description": "A fun satirical role-playing game",
-    "authors": "Rockstar"
+    "description": "A fun Californian role-playing game",
+    "company": "Rockstar"
   },
   {
     "title": "Madden",
-    "description": "A fun western role-playing game",
-    "authors": "John Madden"
+    "description": "A fun football role-playing game",
+    "company": "Electronic Arts"
   }
 ]

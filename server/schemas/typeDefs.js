@@ -11,14 +11,23 @@ const typeDefs = gql`
     } 
     
     type Game {
-        gameId: ID
-        authors: [String]
+        _id: ID
+        company: [String]
         description: String
         title: String
         image: String
         link: String
+        comments: [Comment]
+        upVotes: Int
+        downVotes: Int
     }
 
+    type Comment {
+        _id: ID
+        commentText: String
+        commentAuthor: String
+        createdAt: String
+    }
     
     input games {
         gameId: ID!
@@ -28,7 +37,7 @@ const typeDefs = gql`
         link: String
         upVotes: Int
         downVotes: Int
-        authors: [String]
+        company: [String]
     }
     
     type Auth {
@@ -49,11 +58,12 @@ const typeDefs = gql`
         removeGame(gameId: ID!): User
         addComment(
             gameId: ID!
-            title: String!
-            description: String!
-            authors: String!
+            commentText: String
+            commentAuthor: String
         ): Game
-        removeComment(gameId: ID!): Game
+        removeComment(gameId: ID!, commentId: ID!): Game
+        upVote(gameId: ID!): Game
+        downVote(gameId: ID!): Game
       }
 
 `;

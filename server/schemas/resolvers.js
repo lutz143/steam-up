@@ -77,6 +77,22 @@ const resolvers = {
           }
         );
       },
+      upVote: async (parent, { gameId }) => {
+        const vote = await Game.findOneAndUpdate(
+          { _id: gameId },
+          { $inc: { [`upVotes`]: 1} },
+          { new: true }
+        );
+        return vote;
+      },
+      downVote: async (parent, { gameId }) => {
+        const vote = await Game.findOneAndUpdate(
+          { _id: gameId },
+          { $inc: { [`upVotes`]: -1} },
+          { new: true }
+        );
+        return vote;
+      },
       removeComment: async (parent, { gameId, commentId }) => {
         return Game.findOneAndUpdate(
           { _id: gameId },
