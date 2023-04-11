@@ -3,6 +3,7 @@ const { User, Game } = require('../models');
 const userSeeds = require('./userSeeds.json');
 const gameSeeds = require('./gameSeeds.json');
 
+// seed the database
 db.once('open', async () => {
   await User.deleteMany({});
   await Game.deleteMany({});

@@ -67,5 +67,5 @@ const typeDefs = gql`
       }
 
 `;
-// Maybe add a mutation for upvotes or research better way to implement
+
 module.exports = typeDefs;

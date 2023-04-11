@@ -3,7 +3,7 @@ const dateFormat = require('../utils/dateFormat');
 
 // subschema to house books within the User model
 const gameSchema = new Schema({
-  // saved game from Steam
+  // saved game data from Steam API
   title: {
     type: String,
     required: true,
