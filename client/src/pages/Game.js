@@ -8,7 +8,7 @@ function Game() {
 
   useEffect(() => {
     // Replace with steam API key
-    const apiKey = "_STEAM_API_KEY";
+    const apiKey = "E3EB3C53AD79F1EDF5135085E8AC4947";
 
     const appId = //; 
 
