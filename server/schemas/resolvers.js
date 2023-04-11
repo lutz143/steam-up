@@ -24,6 +24,7 @@ const resolvers = {
     },
   
     Mutation: {
+      // mutation queries to handle CRUD operations
       addUser: async (parent, { username, email, password }) => {
         const user = await User.create({ username, email, password });
         const token = signToken(user);
@@ -76,6 +77,22 @@ const resolvers = {
             runValidators: true,
           }
         );
+      },
+      upVote: async (parent, { gameId }) => {
+        const vote = await Game.findOneAndUpdate(
+          { _id: gameId },
+          { $inc: { [`upVotes`]: 1} },
+          { new: true }
+        );
+        return vote;
+      },
+      downVote: async (parent, { gameId }) => {
+        const vote = await Game.findOneAndUpdate(
+          { _id: gameId },
+          { $inc: { [`upVotes`]: -1} },
+          { new: true }
+        );
+        return vote;
       },
       removeComment: async (parent, { gameId, commentId }) => {
         return Game.findOneAndUpdate(
