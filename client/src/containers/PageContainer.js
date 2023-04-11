@@ -1,7 +1,11 @@
 import classes from "./PageContainer.module.css";
 
 function PageContainer(props) {
-  //TODO
+  return (
+    <section className={classes.pageBody}>
+      {props.children}
+    </section>
+  )
 }
 
 export default PageContainer;

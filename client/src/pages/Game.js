@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import PageContainer from "../containers/PageContainer";
 import classes from "./Game.module.css";
-import SteamAPI from "steam-webapi";
+// import SteamAPI from "steam-webapi";
 
 function Game() {
   const [gameDetails, setGameDetails] = useState(null);
