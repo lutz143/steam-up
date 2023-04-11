@@ -1,7 +1,7 @@
 .pageBody {
     overflow-y: auto;
-    height: calc(90vh - 62px);
-    padding: 4rem 4rem 0 4rem;
+    height: calc(100vh);
+    padding: 6rem 6rem 2rem;
     margin: 0 auto;
     font-size: 1.4rem;
 }
