@@ -1,12 +1,9 @@
 const { Schema, model } = require('mongoose');
+const dateFormat = require('../utils/dateFormat');
 
 // subschema to house books within the User model
 const gameSchema = new Schema({
-  // saved game from Steam
-  // gameId: {
-  //   type: String,
-  //   required: true,
-  // },
+  // saved game data from Steam API
   title: {
     type: String,
     required: true,
@@ -28,7 +25,7 @@ const gameSchema = new Schema({
     type: Number,
     default: 0
   },
-  authors: [
+  company: [
     {
       type: String,
     },
