@@ -1,1 +1,15 @@
-/* TODO */
+.header {
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(13, 13, 13);
+    text-align: left;
+}
+
+.title {
+    text-decoration: none;
+    color: white;
+    font-size: 2.2rem;
+    font-family: 'Rubik Mono One', sans-serif;
+    margin-left: 1rem;
+}
