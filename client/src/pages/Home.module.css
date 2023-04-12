@@ -17,6 +17,7 @@ h2 {
     text-align: center;
     padding: 0 16rem;
     justify-content: center;
+    margin: 2rem 0 0;
 }
 
 .gridCard {
@@ -28,9 +29,36 @@ h2 {
     justify-self: center;
 }
 
+.gridCard img {
+    margin: 1.2rem 0 0;
+    width: 280px;
+    height: 360px;
+    transition: .6s;
+}
+
+.gridCard p {
+    margin: 1.8rem;
+    color: white;
+    font-size: 1.8rem;
+    background-color: #2a475e;
+    transition: .6s;
+}
+
 .gridCard:hover {
     height: 31rem;
     width: 20.5rem;
     transition: 0.6s;
     justify-self: center;
+}
+
+.gridCard:hover >img {
+    width: 289px;
+    height: 372px;
+    transition: .6s
+}
+
+.gridCard:hover >p {
+    margin: 1.9rem;
+    font-size: 1.9rem;
+    transition: .6s;
 }
