@@ -20,16 +20,46 @@ function Home() {
       <h1>Welcome to Steam Up!</h1>
       <h2>Check out what's popular today!</h2>
       <section className={classes.gridContainer}>
-        <div className={classes.gridCard}>1</div>
-        <div className={classes.gridCard}>2</div>
-        <div className={classes.gridCard}>3</div>
-        <div className={classes.gridCard}>4</div>
-        <div className={classes.gridCard}>5</div>
-        <div className={classes.gridCard}>6</div>
-        <div className={classes.gridCard}>7</div>
-        <div className={classes.gridCard}>8</div>
-        <div className={classes.gridCard}>9</div>
-        <div className={classes.gridCard}>10</div>
+        <div className={classes.gridCard}>
+          <img src='https://via.placeholder.com/280x360?text=Placeholder+Cover+Art'></img>
+          <p>Game Title</p>
+        </div>
+        <div className={classes.gridCard}>
+          <img src='https://via.placeholder.com/280x360?text=Placeholder+Cover+Art'></img>
+          <p>Game Title</p>
+        </div>
+        <div className={classes.gridCard}>
+          <img src='https://via.placeholder.com/280x360?text=Placeholder+Cover+Art'></img>
+          <p>Game Title</p>
+        </div>
+        <div className={classes.gridCard}>
+          <img src='https://via.placeholder.com/280x360?text=Placeholder+Cover+Art'></img>
+          <p>Game Title</p>
+        </div>
+        <div className={classes.gridCard}>
+          <img src='https://via.placeholder.com/280x360?text=Placeholder+Cover+Art'></img>
+          <p>Game Title</p>
+        </div>
+        <div className={classes.gridCard}>
+          <img src='https://via.placeholder.com/280x360?text=Placeholder+Cover+Art'></img>
+          <p>Game Title</p>
+        </div>
+        <div className={classes.gridCard}>
+          <img src='https://via.placeholder.com/280x360?text=Placeholder+Cover+Art'></img>
+          <p>Game Title</p>
+        </div>
+        <div className={classes.gridCard}>
+          <img src='https://via.placeholder.com/280x360?text=Placeholder+Cover+Art'></img>
+          <p>Game Title</p>
+        </div>
+        <div className={classes.gridCard}>
+          <img src='https://via.placeholder.com/280x360?text=Placeholder+Cover+Art'></img>
+          <p>Game Title</p>
+        </div>
+        <div className={classes.gridCard}>
+          <img src='https://via.placeholder.com/280x360?text=Placeholder+Cover+Art'></img>
+          <p>Game Title</p>
+        </div>
       </section>
     </PageContainer>
   );
