@@ -26,7 +26,6 @@ function Home() {
   if (error) return <p>Error</p>;
 
 
-
   return (
     <PageContainer>
       <h1>
@@ -41,7 +40,7 @@ function Home() {
       <h2>Check out what's popular today!</h2>
       <section className={classes.gridContainer}>
         <div className={classes.gridCard}>
-          <img src='https://via.placeholder.com/280x360?text=Placeholder+Cover+Art' alt='Placeholder'></img>
+          <img src="../images/rdr2.jpg" alt='Placeholder'></img>
           <p>Game Title</p>
         </div>
         <div className={classes.gridCard}>
