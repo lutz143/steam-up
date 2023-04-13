@@ -23,6 +23,8 @@
   "bugs": {
     "url": "https://github.com/lutz143/steam-up/issues"
   },
-  "homepage": "https://github.com/lutz143/steam-up#readme"
+  "homepage": "https://github.com/lutz143/steam-up#readme",
+  "dependencies": {
+    "jwt-decode": "^3.1.2"
+  }
 }
-
