@@ -1,49 +1,27 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import {
-  ApolloClient,
-  InMemoryCache,
-  ApolloProvider,
-  createHttpLink,
-} from "@apollo/client";
-import { setContext } from "@apollo/client/link/context";
+//import {
+  //ApolloClient,
+  //InMemoryCache,
+  //ApolloProvider,
+  //createHttpLink,
+//} from "@apollo/client";
+//import { setContext } from "@apollo/client/link/context";
 
 import classes from "./App.css";
 
 import Header from "./containers/Header";
 import Sidebar from "./containers/Sidebar";
 import Footer from "./containers/Footer";
-import LoginForm from "./components/LoginForm";
 
 import Home from "./pages/Home";
 import Game from "./pages/Game";
 import Profile from "./pages/Profile";
 import SearchResults from "./pages/SearchResults";
 
-const httpLink = createHttpLink({
-  uri: "/graphql",
-});
-
-const authLink = setContext((_, { headers }) => {
-  const token = localStorage.getItem("id_token");
-  return {
-    headers: {
-      ...headers,
-      authorization: token ? `Bearer ${token}` : "",
-    },
-  };
-});
-
-const client = new ApolloClient({
-  link: authLink.concat(httpLink),
-  cache: new InMemoryCache(),
-});
-
 function App() {
-  const [isLoggedIn, setIsLoggedIn] = useState(false); //Added Set if needed later
-
   return (
-   <ApolloProvider client={ client }>
+   // <ApolloProvider>
       <Router>
         <Header />
         <Routes>
@@ -51,12 +29,10 @@ function App() {
           <Route path="/game" element={<Game />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/search" element={<SearchResults />} />
-          {!isLoggedIn && <Route path="/login" element={<LoginForm />} />}
-          {isLoggedIn && <Navigate to="/" />}
         </Routes>
         <Footer />
       </Router>
-    </ApolloProvider>
+    //</ApolloProvider>
   );
 }
 
