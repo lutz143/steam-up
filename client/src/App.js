@@ -19,6 +19,7 @@ import Game from "./pages/Game";
 import Profile from "./pages/Profile";
 import SearchResults from "./pages/SearchResults";
 
+
 const httpLink = createHttpLink({
   uri: "/graphql",
 });
