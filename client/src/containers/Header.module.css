@@ -79,9 +79,13 @@
     transform: translateY(2px);
 }
 
-@media screen and (max-width: 768px) {}
+@media screen and (max-width: 1200px) { 
+    .search {
+        width: 75%
+    }
+}
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
     .header {
         position: fixed;
         width: 100%;
@@ -104,6 +108,12 @@
         align-items: center;
     }
 
+    .search {
+        width: 50%
+    }
+}
+
+@media screen and (max-width: 600px) {
     .search {
         width: 65%
     }
