@@ -13,6 +13,7 @@ import classes from "./App.css";
 import Header from "./containers/Header";
 import Sidebar from "./containers/Sidebar";
 import Footer from "./containers/Footer";
+import LoginForm from "./components/LoginForm";
 
 import Home from "./pages/Home";
 import Game from "./pages/Game";
@@ -39,6 +40,8 @@ const client = new ApolloClient({
 });
 
 function App() {
+  const [isLoggedIn, setIsLoggedIn] = useState(false); //Added Set if needed later
+
   return (
    <ApolloProvider client={ client }>
       <Router>
@@ -48,6 +51,8 @@ function App() {
           <Route path="/game" element={<Game />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/search" element={<SearchResults />} />
+          {!isLoggedIn && <Route path="/login" element={<LoginForm />} />}
+          {isLoggedIn && <Navigate to="/" />}
         </Routes>
         <Footer />
       </Router>
