@@ -25,6 +25,7 @@ export const QUERY_GAME = gql`
         _id
         title
         description
+        image
         company
         upVotes
         comments {
