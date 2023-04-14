@@ -1,12 +1,13 @@
-.header {
-    position: absolute;
+.coverArt {
     background-color: black;
-    width: 100%;
-    height: 10rem;
+    width: 280px;
+    height: 360px;
+    margin: 10px auto;
+    display: flex;
 }
 
 .detailHolder {
-    padding-top: 11rem;
+    padding-top: 1rem;
 }
 
 .desc {
@@ -14,8 +15,49 @@
     color: white;
 }
 
+.vote {
+    color: rgb(255, 49, 49);
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 2rem;
+}
+
 .commentsTitle {
-    padding-top: 10rem;
+    padding-top: 1rem;
+}
+
+.addComment {
+    height: 4rem;
+    width: 60rem;
+    display: flex;
+    margin: 0 auto 6px;
+    color: white;
+}
+
+.addCommentBtn {
+    display: flex;
+    font-size: 18px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: rgb(42, 42, 42);
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0 1px #4f4f4f;
+    margin: 0 auto 1rem;
+}
+
+.addCommentBtn:hover {
+    background-color: #202020
+}
+
+.addCommentBtn:active {
+    background-color: #2a475e;
+    box-shadow: 0 0.5px #4f4f4f;
+    transform: translateY(2px);
 }
 
 .commentsHolder {
