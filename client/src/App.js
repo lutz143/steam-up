@@ -11,7 +11,6 @@ import { setContext } from "@apollo/client/link/context";
 import classes from "./App.css";
 
 import Header from "./containers/Header";
-import Sidebar from "./containers/Sidebar";
 import Footer from "./containers/Footer";
 
 import Home from "./pages/Home";
