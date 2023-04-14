@@ -49,6 +49,7 @@ const typeDefs = gql`
         me: User
         users: [User]
         search: [Game]
+        game(gameId: ID!): Game
     }
     
     type Mutation {

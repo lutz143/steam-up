@@ -1,62 +1,102 @@
 [
   {
+    "title": "Road Rash 64",
+    "description": "A fun biker role-playing game",
+    "company": "IDK",
+    "image": "/images/roadRash.JPG",
+    "comments": {
+      "commentText": "Warfa always goes after me on his moped.",
+      "commentAuthor": "Josh Lutz"
+    }
+  },
+  {
     "title": "Red Dead Redemption II",
     "description": "A fun western role-playing game",
     "company": "Rockstar",
-    "image": "/images/rdr2.jpg"
+    "image": "/images/rdr2.jpg",
+    "comments": {
+      "commentText": "I spend too much time playing this game.",
+      "commentAuthor": "Josh Lutz"
+    }
   },
   {
     "title": "GTA V",
     "description": "A fun Californian role-playing game",
     "company": "Rockstar",
-    "image": "/images/gtaV.JPG"
-  },
-  {
-    "title": "Road Rash 64",
-    "description": "A fun biker role-playing game",
-    "company": "IDK",
-    "image": "/images/roadRash.JPG"
+    "image": "/images/gtaV.JPG",
+    "comments": {
+      "commentText": "I usually just drive around on my moped.",
+      "commentAuthor": "Warfa Hassan"
+    }
   },
   {
     "title": "Madden",
     "description": "A fun football role-playing game",
     "company": "Electronic Arts",
-    "image": "/images/madden23.JPG"
+    "image": "/images/madden23.JPG",
+    "comments": {
+      "commentText": "This game is so realistic!.",
+      "commentAuthor": "Jackob Anderson"
+    }
   },
   {
     "title": "Assassin's Creed III",
     "description": "A fun football role-playing game",
     "company": "Electronic Arts",
-    "image": "/images/assassinsCreed.JPG"
+    "image": "/images/assassinsCreed.JPG",
+    "comments": {
+      "commentText": "I hide in the shadows and then sneak up on the enemy.",
+      "commentAuthor": "Joshua OBrien"
+    }
   },
   {
     "title": "Rock Band 4",
     "description": "A fun football role-playing game",
     "company": "Electronic Arts",
-    "image": "/images/rockBand4.JPG"
+    "image": "/images/rockBand4.JPG",
+    "comments": {
+      "commentText": "I smash the drums and my singing is great.",
+      "commentAuthor": "Dan Boston"
+    }
   },
   {
     "title": "Frogger",
     "description": "A fun football role-playing game",
     "company": "Electronic Arts",
-    "image": "/images/frogger.JPG"
+    "image": "/images/frogger.JPG",
+    "comments": {
+      "commentText": "I always get run over by the moped.",
+      "commentAuthor": "Warfa Hassan"
+    }
   },
   {
     "title": "Minecraft",
     "description": "A fun football role-playing game",
     "company": "Electronic Arts",
-    "image": "/images/minecraft.JPG"
+    "image": "/images/minecraft.JPG",
+    "comments": {
+      "commentText": "I can play for hours.",
+      "commentAuthor": "Jakob Anderson"
+    }
   },
   {
     "title": "Resident Evil 4",
     "description": "A fun football role-playing game",
     "company": "Electronic Arts",
-    "image": "/images/re4.JPG"
+    "image": "/images/re4.JPG",
+    "comments": {
+      "commentText": "This game gives me nightmares.",
+      "commentAuthor": "Joshua OBrien"
+    }
   },
   {
     "title": "Pokemon Scarlett",
     "description": "A fun football role-playing game",
     "company": "Electronic Arts",
-    "image": "/images/pokemon.JPG"
+    "image": "/images/pokemon.JPG",
+    "comments": {
+      "commentText": "I like me some pokemon.",
+      "commentAuthor": "Joshua OBrien"
+    }
   }
 ]
