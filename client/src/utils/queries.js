@@ -37,3 +37,20 @@ export const QUERY_GAME = gql`
       }
     }
 `
+
+export const QUERY_SINGLE_GAME = gql`
+  query getSingleGame($gameId: ID!) {
+    game(gameId: $gameId) {
+      title
+      description
+      upVotes
+      image
+      company
+      comments {
+        commentText
+        createdAt
+        commentAuthor
+      }
+    }
+  }
+`

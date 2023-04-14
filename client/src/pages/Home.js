@@ -1,23 +1,15 @@
-import PageContainer from "../containers/PageContainer";
 import { useQuery, useMutation } from "@apollo/client";
-import classes from "./Home.module.css";
+import React, { useState, useEffect } from 'react';
 import { QUERY_ME } from "../utils/queries";
 import { QUERY_GAME } from "../utils/queries";
-import React, { useState, useEffect } from 'react';
+
+import PageContainer from "../containers/PageContainer";
+import { Link } from 'react-router-dom';
+import classes from "./Home.module.css";
+import { Nav } from 'react-bootstrap';
 
 
 function Home() {
-  // const [data, setData] = useState([]);
-
-  // useEffect(() => {
-  //   const fetchData = async () => {
-  //     const response = await fetch('https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=570&count=3&maxlength=300&format=json');
-  //     const jsonData = await response.json();
-  //     setData(jsonData);
-  //   }
-  //   fetchData();
-  // }, []);
-
 
   const { loading, error, data } = useQuery(QUERY_GAME);
 
@@ -30,10 +22,10 @@ function Home() {
       <h2>Check out what's popular today!</h2>
       <section className={classes.gridContainer}>
         {data.search.map((game, index) => 
-          <div className={classes.gridCard}>
+          <Nav.Link className={classes.gridCard} as={Link} to={`/game/${game._id}`}>
             <img src={game.image} alt={game.description}></img>
             <p>{game.title}</p>
-          </div>)}
+          </Nav.Link>)}
       </section>
     </PageContainer>
   );

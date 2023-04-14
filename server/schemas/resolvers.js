@@ -20,6 +20,9 @@ const resolvers = {
       },
       users: async () => {
         return User.find()
+      },
+      game: async (parent, { gameId }) => {
+        return Game.findOne({ _id: gameId });
       }
     },
   

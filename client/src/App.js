@@ -45,8 +45,8 @@ function App() {
       <Router>
         <Header />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/game" element={<Game />} />
+          <Route path="/" element={<Home />} />          
+          <Route path="/game/:gameId" element={<Game />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/search" element={<SearchResults />} />
         </Routes>
