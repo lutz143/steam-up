@@ -2,21 +2,61 @@
   {
     "title": "Red Dead Redemption II",
     "description": "A fun western role-playing game",
-    "company": "Rockstar"
+    "company": "Rockstar",
+    "image": "/images/rdr2.jpg"
   },
   {
     "title": "GTA V",
     "description": "A fun Californian role-playing game",
-    "company": "Rockstar"
+    "company": "Rockstar",
+    "image": "/images/gtaV.JPG"
   },
   {
     "title": "Road Rash 64",
     "description": "A fun biker role-playing game",
-    "company": "IDK"
+    "company": "IDK",
+    "image": "/images/roadRash.JPG"
   },
   {
     "title": "Madden",
     "description": "A fun football role-playing game",
-    "company": "Electronic Arts"
+    "company": "Electronic Arts",
+    "image": "/images/madden23.JPG"
+  },
+  {
+    "title": "Assassin's Creed III",
+    "description": "A fun football role-playing game",
+    "company": "Electronic Arts",
+    "image": "/images/assassinsCreed.JPG"
+  },
+  {
+    "title": "Rock Band 4",
+    "description": "A fun football role-playing game",
+    "company": "Electronic Arts",
+    "image": "/images/rockBand4.JPG"
+  },
+  {
+    "title": "Frogger",
+    "description": "A fun football role-playing game",
+    "company": "Electronic Arts",
+    "image": "/images/frogger.JPG"
+  },
+  {
+    "title": "Minecraft",
+    "description": "A fun football role-playing game",
+    "company": "Electronic Arts",
+    "image": "/images/minecraft.JPG"
+  },
+  {
+    "title": "Resident Evil 4",
+    "description": "A fun football role-playing game",
+    "company": "Electronic Arts",
+    "image": "/images/re4.JPG"
+  },
+  {
+    "title": "Pokemon Scarlett",
+    "description": "A fun football role-playing game",
+    "company": "Electronic Arts",
+    "image": "/images/pokemon.JPG"
   }
 ]
