@@ -1,1 +1,37 @@
-/* TODO */
+.header {
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    height: 10rem;
+}
+
+.detailHolder {
+    padding-top: 11rem;
+}
+
+.desc {
+    text-align: center;
+    color: white;
+}
+
+.commentsTitle {
+    padding-top: 10rem;
+}
+
+.commentsHolder {
+    margin: 0 auto;
+    width: 75%;
+    border: 1px solid white;
+    padding: 1rem;
+    color: white;
+}
+
+.username {
+    font-weight: bold;
+    color: #66c0f4;
+    margin-bottom: 0;
+}
+
+.comment {
+    margin-bottom: 0;
+}

@@ -1,30 +1,43 @@
 import React, { useState, useEffect } from "react";
 import PageContainer from "../containers/PageContainer";
 import classes from "./Game.module.css";
-// import SteamAPI from "steam-webapi";
 
-function Game() {
-  const [gameDetails, setGameDetails] = useState(null);
+function Comment(data) {
+  return (
+    <div className={classes.commentsHolder}>
+      <a className={classes.username}>{data.username}</a>
+      <p className={classes.comment}>{data.comment}</p>
+    </div>
+  );
+}
 
-  useEffect(() => {
-    // Replace with steam API key
-    const apiKey = "E3EB3C53AD79F1EDF5135085E8AC4947";
-
-    const appId = //; 
-
-    // Use the Steam API to get details for the specified game
-    SteamAPI.getAppDetails(appId, apiKey).then((data) => {
-      setGameDetails(data);
-    });
-  }, []);
-
+function Game(props) {
   return (
     <PageContainer title="Game Details">
-      {gameDetails ? (
-        <div className={classes.gameDetails}>
-          <h1>{gameDetails.name}</h1>
-          <p>{gameDetails.short_description}</p>
-          <img src={gameDetails.header_image} alt={gameDetails.name} />
+      {props ? (
+        <div>
+          <img src={props.header} alt={props.name} className={classes.header} />
+          <div className={classes.detailHolder}>
+            <h1 className={classes.gameTitle}>{props.name}Minecraft</h1>
+            <p className={classes.desc}>
+              {props.desc}A sandbox block game devloped by Mojang Studios.
+            </p>
+          </div>
+          <h2 className={classes.commentsTitle}>Comments</h2>
+          {/* Placeholder example comments - Would be replaced with database data running through the Comment function above */}
+          <div className={classes.commentsHolder}>
+            <a className={classes.username}>RetroTech</a>
+            <p className={classes.comment}>This game is great!</p>
+          </div>
+          <div className={classes.commentsHolder}>
+            <a className={classes.username}>RetroTech</a>
+            <p className={classes.comment}>I just beat this game.</p>
+          </div>
+          <div className={classes.commentsHolder}>
+            <a className={classes.username}>RetroTech</a>
+            <p className={classes.comment}>I love this game!</p>
+          </div>
+          {/* End of placeholder example comments */}
         </div>
       ) : (
         <p>Loading game details...</p>
