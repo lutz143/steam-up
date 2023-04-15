@@ -2,7 +2,6 @@ const db = require('../config/connection');
 const { User, Game } = require('../models');
 const userSeeds = require('./userSeeds.json');
 const gameSeeds = require('./gameSeeds.json');
-const commentSeeds = require('./commentSeeds.json');
 
 // seed the database
 db.once('open', async () => {

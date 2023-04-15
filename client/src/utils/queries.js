@@ -54,3 +54,12 @@ export const QUERY_SINGLE_GAME = gql`
     }
   }
 `
+
+export const QUERY_VOTES = gql`
+  query votes($gameId: ID!) {
+    votes(gameId: $gameId) {
+      _id
+      upVotes
+    }
+  }
+`;
