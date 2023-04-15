@@ -16,11 +16,23 @@
 }
 
 .vote {
-    color: rgb(255, 49, 49);
+    color: rgba(223, 217, 144, 0.909);
     font-weight: bold;
     font-size: 2rem;
     text-align: center;
     padding-top: 2rem;
+}
+
+.voteArrowUp:hover {
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+    color: rgb(13, 129, 13);
+}
+
+.voteArrowDown:hover {
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+    color: red;
 }
 
 .commentsTitle {

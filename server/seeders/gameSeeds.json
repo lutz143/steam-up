@@ -41,7 +41,7 @@
   },
   {
     "title": "Assassin's Creed III",
-    "description": "A fun football role-playing game",
+    "description": "A fun Revolutionary War role-playing game",
     "company": "Electronic Arts",
     "image": "/images/assassinsCreed.JPG",
     "comments": {
@@ -51,7 +51,7 @@
   },
   {
     "title": "Rock Band 4",
-    "description": "A fun football role-playing game",
+    "description": "A fun rock band role-playing game",
     "company": "Electronic Arts",
     "image": "/images/rockBand4.JPG",
     "comments": {
@@ -61,7 +61,7 @@
   },
   {
     "title": "Frogger",
-    "description": "A fun football role-playing game",
+    "description": "A fun frog role-playing game",
     "company": "Electronic Arts",
     "image": "/images/frogger.JPG",
     "comments": {
@@ -71,7 +71,7 @@
   },
   {
     "title": "Minecraft",
-    "description": "A fun football role-playing game",
+    "description": "A fun game",
     "company": "Electronic Arts",
     "image": "/images/minecraft.JPG",
     "comments": {
@@ -81,7 +81,7 @@
   },
   {
     "title": "Resident Evil 4",
-    "description": "A fun football role-playing game",
+    "description": "A fun scary role-playing game",
     "company": "Electronic Arts",
     "image": "/images/re4.JPG",
     "comments": {
@@ -91,7 +91,7 @@
   },
   {
     "title": "Pokemon Scarlett",
-    "description": "A fun football role-playing game",
+    "description": "A fun anime role-playing game",
     "company": "Electronic Arts",
     "image": "/images/pokemon.JPG",
     "comments": {
