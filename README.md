@@ -5,7 +5,7 @@
 ![Login Page](PH)
 ![Upvote page](PH)
 
-![License Badge](https://img.shields.io/badge/license-MIT-brightgreen)
+![License Badge](https://img.shields.io/badge/license-MIT-blue)
 
 ## Table of Contents
 - [Description](#description)
@@ -38,7 +38,7 @@ https://github.com/lutz143/steam-up
 [RetroTechCode](https://github.com/RetroTechCode)  
 [lutz143](https://github.com/lutz143)  
 [WarfaHa](https://github.com/WarfaHa)  
-[Jdanders99](https://github.com/Jdanders99)
+[Jdanders99](https://github.com/Jdanders99)  
 [Projectmayhem90](https://github.com/Projectmayhem90)  
 
 ## Questions
