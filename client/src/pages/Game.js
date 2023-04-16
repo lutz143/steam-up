@@ -13,7 +13,7 @@ import { useQuery, useMutation } from "@apollo/client";
 const Game = () => {
   const { gameId } = useParams();
 
-  const { loading, data } = useQuery(QUERY_SINGLE_GAME, {
+  const { loading, data, refetch } = useQuery(QUERY_SINGLE_GAME, {
     // pass URL param
     variables: { gameId: gameId },
   });
@@ -28,6 +28,7 @@ const Game = () => {
       await Upvote({
         variables: { gameId: gameId },
       });
+      await refetch();
     }
     catch (err) {
       console.error(err);
@@ -39,6 +40,7 @@ const Game = () => {
       await downVote({
         variables: { gameId: gameId },
       });
+      await refetch();
     }
     catch (err) {
       console.error(err);
