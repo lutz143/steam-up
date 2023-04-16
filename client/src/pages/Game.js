@@ -1,13 +1,17 @@
+import React, { useState } from 'react';
+import { useParams } from 'react-router-dom';
+import { useQuery, useMutation } from "@apollo/client";
+
 import PageContainer from "../containers/PageContainer";
 import classes from "./Game.module.css";
 import { BiUpvote, BiDownvote } from "react-icons/bi";
 
-
 import { QUERY_SINGLE_GAME } from '../utils/queries';
 import { ADD_VOTE } from '../utils/mutations';
 import { DOWN_VOTE } from '../utils/mutations';
-import { useParams } from 'react-router-dom';
-import { useQuery, useMutation } from "@apollo/client";
+import { ADD_COMMENT } from '../utils/mutations';
+
+import Auth from '../utils/auth';
 
 
 const Game = () => {
@@ -20,8 +24,39 @@ const Game = () => {
 
   const game = data?.game || {};
 
-  const [Upvote, { error }] = useMutation(ADD_VOTE);
+  const [Upvote, { errorUp }] = useMutation(ADD_VOTE);
   const [downVote, { errorDown }] = useMutation(DOWN_VOTE);
+  const [commentText, setCommentText] = useState('');
+  const [characterCount, setCharacterCount] = useState(0);
+
+  const [addComment, { errorComment }] = useMutation(ADD_COMMENT);
+
+  const handleFormSubmit = async (event) => {
+    event.preventDefault();
+
+    try {
+      const { data } = await addComment({
+        variables: {
+          gameId,
+          commentText,
+          commentAuthor: Auth.getProfile().data.username,
+        },
+      });
+      await refetch();
+      setCommentText('');
+    } catch (err) {
+      console.error(err);
+    }
+  };
+
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+
+    if (name === 'commentText' && value.length <= 280) {
+      setCommentText(value);
+      setCharacterCount(value.length);
+    }
+  };
 
   const handleVote = async () => {
     try {
@@ -77,8 +112,14 @@ const Game = () => {
             </div>
           )}
             <h2 className={classes.commentsTitle}>Comments</h2>
-            <textarea className={classes.addComment} placeholder='Add a comment..'></textarea>
-            <button class={classes.addCommentBtn}>Submit</button>
+            <textarea 
+              className={classes.addComment} 
+              name="commentText"
+              placeholder='Add a comment..'
+              value={commentText}
+              onChange={handleChange}
+            ></textarea>
+            <button className={classes.addCommentBtn} onClick={handleFormSubmit}>Submit</button>
           {/* Placeholder example comments - Would be replaced with database data running through the Comment function above */}
           {/* {game.comments.map((game, index) =>  */}
           {game.comments.map((comment, index) => 
