@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/lutz143/steam-up#readme",
   "dependencies": {
+    "@apollo/react-hooks": "^4.0.0",
     "jwt-decode": "^3.1.2"
   }
 }
