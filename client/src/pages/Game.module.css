@@ -89,3 +89,15 @@
 .comment {
     margin-bottom: 0;
 }
+
+@media screen and (max-width: 1200px) { 
+    .addComment {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 768px) { 
+    .coverArt {
+        margin-top: 75px;
+    }
+}
