@@ -1,11 +1,11 @@
-## Steam-Up
+## Steam-🆙
 
 
-![Steam-Up homepage showing an image of the landing page, with band posts](PH)
-![Login Page](PH)
-![Upvote page](PH)
+![Steam-Up homepage showing an image of the landing page, with games](./client/public/STEAMUPHOME.png)
 
-![License Badge](https://img.shields.io/badge/license-MIT-blue)
+![Upvote page with comment & game](./client/public/STEAMUPGAME.png)
+
+![License Badge](https://img.shields.io/badge/license-MIT-brightgreen)
 
 ## Table of Contents
 - [Description](#description)
@@ -21,8 +21,7 @@ Steam-up is a social gaming interactive application that allows users to create 
   
 ## Deployed Application
 
-.//PH
-
+https://t4-steam-up.herokuapp.com/
   
 ## Github
 
@@ -30,8 +29,7 @@ https://github.com/lutz143/steam-up
 
 ## Presentation
 
-[View our presentation on Google Slides](PH)
-
+[View our presentation on Google Slides](https://docs.google.com/presentation/d/16FFgj7svFV0w0SE1pqvaS_-Ivr1sdOFAdu9A1AUlI8w/edit#slide=id.g22dd8cedbb0_0_15)
 
 ## Contribution
 
