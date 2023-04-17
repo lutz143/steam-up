@@ -14,6 +14,11 @@
     margin: 15px 0;
   }
 
+  .favoriteGameContainer {
+    display: flex;
+    justify-content: center;
+  }
+
 .profileContainer {
     display: flex;
     justify-content: center;
