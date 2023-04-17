@@ -1,0 +1,14 @@
+.formHolder {
+  width: 25%;
+  margin: auto;
+}
+
+.inputLabel {
+  color: white;
+}
+
+.formSubmit {
+  display: flex;
+  width: auto;
+  margin: auto;
+}

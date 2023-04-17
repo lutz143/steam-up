@@ -2,10 +2,9 @@ import { NavLink } from "react-router-dom";
 
 import classes from "./Header.module.css";
 
-
-  const handleClick = () => {
-    // Code to handle button click
-  };
+const handleClick = () => {
+  // Code to handle button click
+};
 
 function Header() {
   return (
@@ -25,9 +24,7 @@ function Header() {
       </div>
       <div className={classes.containerRight}>
         <button className={classes.login} onClick={handleClick}>
-          <NavLink to="/Login">
-          Login / Register
-        </NavLink>
+          <NavLink to="/Login">Login</NavLink>
         </button>
       </div>
     </header>
