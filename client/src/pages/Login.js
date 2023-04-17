@@ -1,7 +1,8 @@
 import { NavLink } from "react-router-dom";
 import PageContainer from "../containers/PageContainer";
-import classes from "../containers/Header.js";
 import LoginForm from "../components/LoginForm";
+
+import classes from "./Login.module.css";
 
 const handleClick = () => {
   // Code to handle button click
@@ -10,9 +11,14 @@ const handleClick = () => {
 function Login() {
   return (
     <PageContainer>
-      <LoginForm></LoginForm>
-      <button onClick={handleClick} type="submit" variant="success">
-        <NavLink to="/signup">Sign Up!</NavLink>
+      <LoginForm />
+      <button
+        onClick={handleClick}
+        type="submit"
+        variant="success"
+        className={classes.signUpBtn}
+      >
+        <NavLink to="/signup">New here? Sign up!</NavLink>
       </button>
     </PageContainer>
   );
