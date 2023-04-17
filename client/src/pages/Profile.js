@@ -24,10 +24,13 @@ function Profile() {
           <p className={classes.profileDetails}>Age: 35</p>
           <p className={classes.profileDetails}>Birthday: I don't have birthdays. I level up.</p>
           <p className={classes.profileDetails}>Favorite Game: NASCAR Heat 5</p>
-          <img className={classes.profileGame}
-            src="./images/Nascar_Heat_5_Cover_Art.jpg"
-            alt="Favorite Game"
-          />
+          <div className={classes.favoriteGameContainer}>
+    <img
+      className={classes.favoriteGame}
+      src="./images/Nascar_Heat_5_Cover_Art.jpg"
+      alt="Favorite Game"
+    />
+  </div>
         </div>
         <div>
         </div>
