@@ -23,6 +23,13 @@ function Header() {
         ></input>
       </div>
       <div className={classes.containerRight}>
+        <NavLink to="/Profile" className={classes.profile}>
+        <img
+    src="/images/profile-pic.png"
+    alt="User profile"
+    className={classes.profileImage}
+  />
+        </NavLink>
         <button className={classes.login} onClick={handleClick}>
           <NavLink to="/Login">Login</NavLink>
         </button>
