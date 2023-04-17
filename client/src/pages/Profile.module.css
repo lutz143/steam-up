@@ -32,6 +32,10 @@
     border-radius: 50%;
     object-fit: cover;
   }
+
+  .profileGame {
+    align-items: center;
+  }
   
   .profileName {
     font-size: 2rem;

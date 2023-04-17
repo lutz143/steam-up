@@ -20,10 +20,16 @@ function Profile() {
           />
         </div>
         <div className={classes.profileDetailsContainer}>
-          <h1 className={classes.profileName}>John Doe</h1>
+          <h1 className={classes.profileName}>Ricky Bobby</h1>
           <p className={classes.profileDetails}>Age: 35</p>
           <p className={classes.profileDetails}>Birthday: I don't have birthdays. I level up.</p>
-          <p className={classes.profileDetails}>Favorite Game: L.A. Noire</p>
+          <p className={classes.profileDetails}>Favorite Game: NASCAR Heat 5</p>
+          <img className={classes.profileGame}
+            src="./images/Nascar_Heat_5_Cover_Art.jpg"
+            alt="Favorite Game"
+          />
+        </div>
+        <div>
         </div>
       </div>
     </PageContainer>
