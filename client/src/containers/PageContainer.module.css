@@ -9,7 +9,6 @@
 @media screen and (max-width: 1366px) {
   .pageBody {
     height: unset;
-    overflow-y: scroll;
     padding: 5.5rem 2rem 5rem;
   }
 }
